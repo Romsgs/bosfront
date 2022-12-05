@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
-
+import CreateUserLayout from './modules/createUser/CreateUserLayout/CreateUserLayoute'
 export default function App() {
   return (
     <BrowserRouter>
@@ -15,6 +15,7 @@ export default function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="createuser" element={<CreateUserLayout />} />
         </Route>
       </Routes>
     </BrowserRouter>
